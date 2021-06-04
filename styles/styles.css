@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --delete-color: red;
+    --button-color: #f875aa;
+    --container-background: white;
+    --input-background: #f4f9f9;
+    --text-color-main: gray;  
+    --text-color-heading: gray;
+    --text-color-faint: gray;  
+}
+
+body {
+    background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    height:100vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.container {
+    width: 350px;
+    height: fit-content;
+    font-size: 1.2rem;
+    padding: 20px;
+    background-color: var(--container-background);
+}
+
+
+.input-field,
+.todo-text,
+.delete {
+    padding: 10px;
+}
+
+.input-box,
+.todo-box {
+    margin-top: 20px;
+}
+
+.add-btn{
+    margin-left: 5px;
+    background-color: var(--button-color);
+    font-size: 1.4rem;
+}
+
+.todo-text,
+.input-field,
+.info-text {
+    flex: 1;
+}
+
+.lay {
+    display: flex;
+}
+
+.todo-box {
+    background-color: var(--input-background);
+}
+
+.add-btn,
+.delete {
+    width: 40px;
+    display: block;
+    outline: none;
+    border:none;
+    color: var(--container-background);
+    text-align: center;
+    cursor: pointer;
+}
+
+.delete {
+    background-color: var(--delete-color);
+    border-radius: 0 3px 3px 0;
+}
+
+.info-box {
+    margin-top: 20px;
+}
+
+.info-text {
+    padding: 5px;
+}
+
+.clear-btn {
+    width: 80px;
+    outline: none;
+    border: none;
+    background-color: var(--button-color);
+    color: var(--container-background);
+    cursor: pointer;
+}
+
+
+.rad {
+    border-radius: 3px;
+}
